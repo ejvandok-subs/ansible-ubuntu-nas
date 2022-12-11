@@ -1,0 +1,45 @@
+Ansible Configuration
+
+SSH
+
+ssh user@192.168.89.99  defaults to wsl-ethan
+-	Password protected
+
+ssh -i ansible user@192.168.89.99  specify profile ansible with “i”
+-	Not password protected
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+GIT
+
+git clone >>string from the repository created on GitHub
+- NOTE: creates it in the folder you’re currently in. Go to home folder or a dedicated folder before cloning the repository
+
+git config –global user.name “ethan” 
+git config –global user.email “ejvandok.subs@proton.me”
+- Necessary in order to commit things without issue 
+
+git diff 
+- Shows difference in files 
+
+git add <file you’ve edited> 
+- This adds the file to the git commit
+
+git status 
+- If nothing has been added but it has been changed, it’ll show that change in red
+- If you’ve added the edited file to the commit, it’ll show the change in green 
+
+git commit -m “your message here” 
+- Add a comment to your commit 
+
+git push origin main
+- Main is the name of the branch that you’re pushing to. It could be different, so check. 
+- This should update the repository on GitHub
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ANSIBLE
+
+
